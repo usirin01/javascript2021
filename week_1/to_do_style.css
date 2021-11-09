@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    background-color:cadetblue;
+
+    height: 60vh;
+    width: 60vw;
+
+    box-shadow: 5px 5px 5px 5px grey;
+    border: 1px solid black;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
