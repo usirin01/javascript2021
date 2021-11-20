@@ -29,3 +29,11 @@ if(age<0){
         console.log("YASLI");
     }
 }
+
+
+
+
+
+
+
+
