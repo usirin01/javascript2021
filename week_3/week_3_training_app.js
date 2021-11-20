@@ -6,9 +6,11 @@
 //Eger yas 60 üstü ise bu sahis ihtiyardir.
 
 let age = 40;
+
 if(age<0){
     console.log("Lütfen pozitif sayi giriniz");
 }else
+
 {
 
     if(age<13){
@@ -27,6 +29,11 @@ if(age<0){
     else
     if(age >= 60){
         console.log("YASLI");
+    }
+
+    else
+    if(age >= 80){
+        console.log("COK YASLI")
     }
 }
 
