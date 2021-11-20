@@ -6,21 +6,26 @@
 //Eger yas 60 üstü ise bu sahis ihtiyardir.
 
 let age = 40;
+if(age<0){
+    console.log("Lütfen pozitif sayi giriniz");
+}else
+{
 
-if(age<13){
-    console.log("COCUK");
-}    
-else
-if(age >= 13 && age < 35){
-    console.log("GENC");
-}    
+    if(age<13){
+        console.log("COCUK");
+    }    
+    else
+    if(age >= 13 && age < 35){
+        console.log("GENC");
+    }    
 
-else
-if(age >= 35 && age < 60){
-    console.log("ORTA YASLI");
-} 
+    else
+    if(age >= 35 && age < 60){
+        console.log("ORTA YASLI");
+    } 
 
-else
-if(age >= 60){
-    console.log("YASLI");
+    else
+    if(age >= 60){
+        console.log("YASLI");
+    }
 }
