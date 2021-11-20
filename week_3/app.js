@@ -10,17 +10,17 @@ let age = 40;
 if(age<13){
     console.log("COCUK");
 }    
-
+else
 if(age >= 13 && age < 35){
     console.log("GENC");
 }    
 
-
+else
 if(age >= 35 && age < 60){
     console.log("ORTA YASLI");
 } 
 
-
+else
 if(age >= 60){
-    console.log("GENC");
+    console.log("YASLI");
 }
