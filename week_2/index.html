@@ -8,16 +8,20 @@
 </head>
 <body>
 
-    <!-- HTML input kısmı butona basınca EkranaBas fonksiyonunu çağırıyor-->
-    <input type="text" id="kutu"><br>
-    <input type="submit" value="Bana Tıkla" onclick="EkranaBas()">
+    <!-- if you press the "send" button, the PushScreen() function is called-->
+    <h1>ID Information</h1>
 
+    <form>
+      <label for="phone">What is your name:</label><br><br>
+      <input type="text" id="box" placeholder="Please enter your name" ><br><br>
+      <input type="submit" value="Send" onclick="PushScreen()">
+    </form>
+    
+    <!--four variables were defined-->
     <p id="name" class="Text"></p>
     <p id="id number" class="Text"></p>
     <p id="age" class="Text"></p>
     <p id="job" class="Text"></p>
-
-    
 
     <script src="./app.js"></script>
 </body>

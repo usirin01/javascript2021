@@ -1,0 +1,29 @@
+body{
+    background-color: antiquewhite;
+}
+
+main{
+
+    position: absolute;
+    left:300px;
+    right: 300px;
+    background-color: blueviolet;
+
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    /*animaions*/
+    transition: 0.3s all;
+}
+
+main.animation{
+    background-color: aqua;
+    box-shadow: 1px 1px 4px 4px black;
+    left: 250px;
+    top: 250px;
+
+    width: 500px;
+    height: 500px;
+}
+
+
