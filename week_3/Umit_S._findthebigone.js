@@ -9,7 +9,6 @@ function PushButton()
 {
 //first and second input area's structure were created//
 let firstnumber = document.getElementById("number-1").value;
-
 let secondnumber = document.getElementById("number-2").value;
 console.log(result);
     
@@ -17,21 +16,11 @@ console.log(result);
     if(firstnumber > secondnumber)
     {
         document.getElementById("result").innerHTML = firstnumber;
-        if(firstnumber > secondnumber){
-            console.log(firstnumber);
-        }
-       
-        
     }
-    else 
-    if(secondnumber > firstnumber){
+    else if(secondnumber > firstnumber){
         document.getElementById("result").innerHTML = secondnumber;
-        if(firstnumber > secondnumber){
-            console.log(firstnumber);
-        }
     }
     else{
         document.getElementById("result").innerHTML = "two numbers are equal"
     }
 }
-

@@ -21,7 +21,7 @@
     console.log(typeof yas);
     document.getElementById("age").innerHTML = yas;
 
-    var meslek = null
+    var meslek =
     console.log(typeof meslek);
     document.getElementById("job").innerHTML = meslek;
 
