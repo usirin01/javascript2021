@@ -1,5 +1,5 @@
 /**
- * 1)Defining the numbers,
+ * 1)Defining the numbers randomly,
  * 2)Finding and printing minimum number,
  * 3)Finding and printing maximum number,
  * 4)Calculating sum of all numbers and print to screen,
@@ -9,14 +9,17 @@
  * 8)Ending the program
  */
 
-var numberList = new Array(20);
-//document.getElementById("numbers").innerHTML = new Array; //[0, 1, 4, 9, 16, 25, 36, 49, 64, 81];
-var min,max;
-
 //randomly find the new array number
+
+var numberList = new Array(20);
+var min,max;
 
 for (var i=0; i < numberList.length; i++){
     numberList[i]=Math.floor(Math.random()*100);
+}
+document.write("NUMBERS" + "<br>");
+for(var i=0; i<numberList.length; i++){
+    document.write(numberList[i]+"<br>");
 }
 
 //Finding and printing minimum and maximum number
@@ -31,11 +34,6 @@ for (var i=0; i < numberList.length; i++){
     if (max < numberList[i]){
         max = numberList[i];
     }
-}
-
-document.write("NUMBERS" + "<br>");
-for(var i=0; i<numberList.length; i++){
-    document.write(numberList[i]+"<br>");
 }
 
 document.getElementById("min-number").innerHTML = min;
@@ -54,6 +52,26 @@ for (var i = 0; i < numberList.length; i++){
 document.getElementById("sumof").innerHTML = total;
 
 //Calculating average of all numbers and print to screen
+
+document.getElementById("average").innerHTML = total/20;
+
+//Calculating square roots of all numbers and print to screen
+
+
+for (let i= 0;  i < a; i++){
+    let sqrtroot = Math.sqrt(numberList[i])
+    console.log(sqrtroot);
+}
+
+
+
+//Calculating square of all numbers and print to screen
+
+var sqrt = numberList.map(x => x**2);
+
+document.getElementById("squares").innerHTML = sqrt;
+
+
 
 
 
