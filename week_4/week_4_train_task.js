@@ -14,8 +14,7 @@ var sayac = 0;
 var start = document.querySelector("#start");
 var guess = document.querySelector("#guess");
 var wagonnumber = document.querySelector("#wagonnumber");
-alert(randomnumber);
-//alert("“Now Ahmet is hiding on the train with 10 wagons. Where is he, can you find him?")
+alert("“Now Ahmet is hiding on the train with 10 wagons. Where is he, can you find him?")
 
 
 guess.onclick = function()
