@@ -15,6 +15,19 @@ let sparePart = ["Kaporta5", "Ak3ü",  "Stop Lambasi", "Radyatör 21", "Karbüra
 
 // We determine several functions in this area,
 
+sparePart = sparePart.map(function(x){ return x.toUpperCase(); });
+
+function reverseArray(){
+    var array = sparePart.reverse();
+    
+    return array;
+}
+
+
+let array1 = reverseArray(sparePart)
+console.log(sparePart);
+
+
 
 
 
