@@ -11,21 +11,38 @@
  */
 
 // we were created one array about spare part for cars,
-let sparePart = ["Kaporta5", "Ak3ü",  "Stop Lambasi", "Radyatör 21", "Karbüratör 42", "Tekerlek", "3 AYNA", "Jant"];
+let sparePart = ["Kaporta5", "Akü",  "Stop Lambasi", "Radyatör 21", "Karbüratör 42", "Tekerlek", "3 AYNA", "Jant"];
 
-// We determine several functions in this area,
+// We determine several functions in this area;
 
-sparePart = sparePart.map(function(x){ return x.toUpperCase(); });
+//Transform to upperCase
 
-function reverseArray(){
-    var array = sparePart.reverse();
+let newArr = sparePart.map(function(x){ 
     
-    return array;
-}
+    return x.toUpperCase(); 
+});
+
+//Numbers will be subtracted from the part names
+
+let newArr1 =  newArr.map(function removeArray(p){
+    
+    return p.replace(/[0-9]/g,"");
+})
+
+console.log(newArr1);
+
+//Part names will be reversed,
+
+let newArr2 = newArr1.map(function reverseArray(pName){
+         
+    return pName.split("").reverse().join("");
+})
+
+console.log(newArr2);
+
+//KEREMAG_ will be added to the beginning of each piece,
 
 
-let array1 = reverseArray(sparePart)
-console.log(sparePart);
 
 
 
