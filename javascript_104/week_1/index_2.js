@@ -22,25 +22,45 @@ let newArr = sparePart.map(function(x){
     return x.toUpperCase(); 
 });
 
+console.log(newArr);
+
 //Numbers will be subtracted from the part names
 
-let newArr1 =  newArr.map(function removeArray(p){
+let newArr1 =  newArr.map(function removeArray(y){
     
-    return p.replace(/[0-9]/g,"");
+    return y.replace(/[0-9]/g,"");
 })
 
 console.log(newArr1);
 
 //Part names will be reversed,
 
-let newArr2 = newArr1.map(function reverseArray(pName){
+let newArr2 = newArr1.map(function reverseArray(z){
          
-    return pName.split("").reverse().join("");
+    return z.split("").reverse().join("");
 })
 
 console.log(newArr2);
 
 //KEREMAG_ will be added to the beginning of each piece,
+
+let newArr3 = newArr2.map(function addName(t){
+   
+    return "KEREMMAG_" + t;
+})
+
+console.log(newArr3);
+
+//Login Date was added,
+
+let newArr4 = newArr3.map(function addName(p){
+   
+    return p + "login date" + Date();
+})
+
+console.log(newArr4);
+
+
 
 
 
