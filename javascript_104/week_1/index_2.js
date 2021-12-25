@@ -17,25 +17,25 @@ let sparePart = ["Kaporta5", "Akü",  "Stop Lambasi", "Radyatör 21", "Karbürat
 
 //Transform to upperCase
 
-let newArr = sparePart.map((x) => x.toUpperCase())
+let newArr = sparePart.map((xName) => xName.toUpperCase())
 
 console.log(newArr);
 
 //Numbers will be subtracted from the part names,
 
-let newArr1 =  newArr.map(function removeArray(y){
+let newArr1 =  newArr.map(function removeArray(yName){
     
-    return y.replace(/[0-9]/g,"");
+    return yName.replace(/[0-9]/g,"");
 })
 
 console.log(newArr1);
 
 //Part names will be reversed,
 
-let newArr2 = newArr1.map(function reverseArray(z){
+let newArr2 = newArr1.map(function reverseArray(zName){
   // string values doesnt have reverse feature. Therefore, we firstly changed to array (.split)
   // array has reverse feature. Than, we reversed every array element. Finnally, we changed the array to string(.join(""))       
-    return z.split("").reverse().join("");
+    return zName.split("").reverse().join("");
   
 })
 
@@ -43,18 +43,18 @@ console.log(newArr2);
 
 //KEREMAG_ will be added to the beginning of each piece,
 
-let newArr3 = newArr2.map(function addName(t){
+let newArr3 = newArr2.map(function addName(tName){
    
-    return "KEREMMAG_" + t;
+    return "KEREMMAG_" + tName;
 })
 
 console.log(newArr3);
 
 //Login Date was added,
 
-let newArr4 = newArr3.map(function addName(p){
+let newArr4 = newArr3.map(function addName(pName){
    
-    return p + "login date" + Date();
+    return pName + "login date" + Date();
 })
 
 console.log(newArr4);
