@@ -13,10 +13,11 @@ let numberOfCows = animals.filter(i => i == "cow").length;
 let numberOfSheep = animals.filter(i => i == "sheep").length;
 let numberOfChicken = animals.filter(i => i == "chicken").length;
 let numberOfPig = animals.filter(i => i == "pig").length;
+let numberOfHalalFeet = 4
 
 //we are identifing and selecting appropriate animals,
 function findHalalFeet(halal1, halal2){
-    var halalFeet = (halal1 + halal2)*4;
+    var halalFeet = (halal1 + halal2)*(numberOfHalalFeet);
     
     return halalFeet;
 }

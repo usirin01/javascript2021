@@ -17,14 +17,11 @@ let sparePart = ["Kaporta5", "Akü",  "Stop Lambasi", "Radyatör 21", "Karbürat
 
 //Transform to upperCase
 
-let newArr = sparePart.map(function(x){ 
-    
-    return x.toUpperCase(); 
-});
+let newArr = sparePart.map((x) => x.toUpperCase())
 
 console.log(newArr);
 
-//Numbers will be subtracted from the part names
+//Numbers will be subtracted from the part names,
 
 let newArr1 =  newArr.map(function removeArray(y){
     
