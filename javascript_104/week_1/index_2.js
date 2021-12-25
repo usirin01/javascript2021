@@ -33,8 +33,10 @@ console.log(newArr1);
 //Part names will be reversed,
 
 let newArr2 = newArr1.map(function reverseArray(z){
-         
+  // string values doesnt have reverse feature. Therefore, we firstly changed to array (.split)
+  // array has reverse feature. Than, we reversed every array element. Finnally, we changed the array to string(.join(""))       
     return z.split("").reverse().join("");
+  
 })
 
 console.log(newArr2);
