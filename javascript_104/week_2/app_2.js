@@ -20,12 +20,12 @@ function findNumber(pNumber){
     return pNumber.filter(x => typeof x === "number");
 }
 
-const sayilar = findNumber(incomeStatement);
+const numbers = findNumber(incomeStatement);
 
 //
 
 let total = 0;
-sayilar.map((element) => total += Number(element));
+numbers.map((element) => total += Number(element));
 
 //variable determining
 
