@@ -22,7 +22,7 @@ function findNumber(pNumber){
 
 const numbers = findNumber(incomeStatement);
 
-//
+// adding elements in a new "numbers" array
 
 let total = 0;
 numbers.map((element) => total += Number(element));
