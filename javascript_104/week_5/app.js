@@ -1,0 +1,1 @@
+addCourse.addEventListener("click", addCourse);
