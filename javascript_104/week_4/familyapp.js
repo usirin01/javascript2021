@@ -103,7 +103,7 @@
   * Second function finds boys,
   * Third function finds girls,
   * Fourth function defines the children who are under eight,
-  * Fifth function finds the children who are under eight's mothers name
+  * Fifth function finds the children who are under eight's mothers names,
   * Than the program is ended.
   */
 
@@ -115,32 +115,46 @@ let salaryIsOverFiveThousand =
         .sort();
 console.log("People who has salary over 5000:",salaryIsOverFiveThousand);
 
+let newList = [];
+families.map((pKids) => {
+   pKids.children.map((small) => {
+      newList.push(small);
+   });
+});
+
 // Boys are found,
-let findToBoys = 
-    families
-        .map((pChildren) => pChildren.children
+let findToBoys =
+   newList
         .filter((pChildren) =>pChildren.gender == "boy")
-        .map((pChildren)=> pChildren.name))
+        .map((pChildren)=> pChildren.name)
         .sort();
-console.log("The kids who are boys:",findToBoys); 
+console.log("The children who are boys:",findToBoys); 
 
 //Girls are found,
 let findToGirls = 
-    families
-        .map((pChildren) => pChildren.children
+   newList
         .filter((pChildren) =>pChildren.gender == "girl")
-        .map((pChildren)=> pChildren.name))
+        .map((pChildren)=> pChildren.name)
         .sort();
-console.log("The kids who are girls:",findToGirls);
+console.log("The children who are girls:",findToGirls);
 
 //The children who are under eight are found,
 let findToChildrenUnderEigth = 
-    families 
-        .map((pChildren) => pChildren.children)
-        .filter((pChildren) => pChildren.age < 8)
-        .map((pChildren) => pChildren.name)
-        .sort();
-console.log("The children who are under eight:",findToGirls);
+   newList 
+         .filter((pSmall) => pSmall.age < 8)
+         .map((pSmall) => pSmall.name)
+         .sort();
+console.log("The children who are under eight:",findToChildrenUnderEigth);
+
+//The children who are under eight's mothers names are found,
+
+let findToDefinedMothers =
+   families
+   .filter((newList) => newList.children.some((bigThan8) => bigThan8.age < 8))
+   .map((pAge) => pAge.partner);
+console.log("The children mothers name of under eight are:", findToDefinedMothers);    
+
+        
 
 
 
