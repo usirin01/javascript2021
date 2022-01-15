@@ -150,7 +150,7 @@ console.log("The children who are under eight:",findToChildrenUnderEigth);
 
 let findToDefinedMothers =
    families
-   .filter((newList) => newList.children.some((bigThan8) => bigThan8.age < 8))
+   .filter((newList) => newList.children.some((bigThan8) => bigThan8.age > 8))
    .map((pAge) => pAge.partner);
 console.log("The children mothers name of under eight are:", findToDefinedMothers);    
 
