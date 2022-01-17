@@ -1,0 +1,11 @@
+#battery{
+    width: 50px;
+    height: 90px;
+    border: 1px solid;
+}
+
+.level{
+    width: 50px;
+    height: 30px;
+    border: 1px solid;
+}
