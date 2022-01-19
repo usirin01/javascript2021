@@ -18,3 +18,5 @@ const addPerson = (event) => {
 
     renderPersonList(personList);
 };
+//JSON.stringfy(personList) data(arrayi) degerini stringe ceviriyor ve localstorge e kaydedebiliyoruz.
+//JSON.parse() tekrardan dataya ceviriyor.
