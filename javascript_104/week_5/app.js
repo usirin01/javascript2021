@@ -3,14 +3,15 @@
  * Secondly, we created one function about decrease of battery,
  */
 
-    document.getElementById("row-3").style.backgroundColor = "red"  ;
-    document.getElementById("row-2").style.backgroundColor = "yellow";
-    document.getElementById("row-1").style.backgroundColor = "green";
-function increaseBattery(){
-   
-};
-function decreaseBattery(){
-    document.getElementById("row-3").style.backgroundColor = "red"  ;
-    document.getElementById("row-2").style.backgroundColor = "yellow";
-    document.getElementById("row-1").style.backgroundColor = "green";
-};
+let batteryPercent = 0
+
+let bottom = document.getElementById("row-3").style.backgroundColor = "red"  ;
+let middle = document.getElementById("row-2").style.backgroundColor = "yellow";
+let up = document.getElementById("row-1").style.backgroundColor = "green";
+
+let increaseBattery = document.getElementById("plus");
+let decreaseBattery = document.getElementById("minus");
+
+increaseBattery.addEventListener("click", chargeBattery);
+//decreaseBattery.addEventListener("click", dechargeBattery);
+
