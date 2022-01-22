@@ -9,7 +9,7 @@
 
 // This function is increment function,
 function chargeBattery(){
-    if (batteryPercent <= 6){
+    if (batteryPercent <= 5){
         batteryPercent = batteryPercent + 1
     }
     if (batteryPercent == 0){
