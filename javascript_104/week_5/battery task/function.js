@@ -7,6 +7,7 @@
  * They can effect battery level color.
  */
 
+// This function is increment function,
 function chargeBattery(){
     if (batteryPercent <= 6){
         batteryPercent = batteryPercent + 1
@@ -35,7 +36,7 @@ function chargeBattery(){
     return
     
 }
-
+// This function is reduction function,
 function dechargeBattery(){
     if (batteryPercent >= 0){
         batteryPercent = batteryPercent - 1
