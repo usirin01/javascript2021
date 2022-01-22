@@ -38,7 +38,7 @@ function chargeBattery(){
 }
 // This function is reduction function,
 function dechargeBattery(){
-    if (batteryPercent >= 0){
+    if (batteryPercent >= 1){
         batteryPercent = batteryPercent - 1
     }
     if (batteryPercent == 0){
