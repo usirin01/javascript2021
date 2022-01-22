@@ -1,6 +1,10 @@
 /**
  * Firstly, we created one function about increase of battery,
  * Secondly, we created one function about decrease of battery,
+ * Every click listen by buttons,
+ * We created one varible and this variable's (batteryPercent) value can increase and decrease,
+ * We have already defined if loops,
+ * They can effect battery level color.
  */
 
 function chargeBattery(){
