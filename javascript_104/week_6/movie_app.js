@@ -27,5 +27,5 @@ let movieInformation = [
 
 let pointMovie = 
     movieInformation
-        .filter((movieInformation) => movieInformation.IMDB > 9)
+        .filter((movie) => movie.IMDB > 9)
 console.log("Movie who has IMDB point over 9:",pointMovie);
