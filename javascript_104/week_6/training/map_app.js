@@ -18,3 +18,25 @@ console.log(settings.size)
 const values = settings.values();
 console.log(values)
 
+const keys = settings.keys();
+
+settings.delete("customerMaxProductSize");
+
+settings.clear();
+
+///////////////////////////////////////////////////////////////////////////////What is difference?
+
+const settings = {
+    "customerMaxProductSize":100,
+    "theme":"dark",
+    "language":"de"
+}
+
+settings["bodySize"] = "XL";
+delete settings["theme"];
+settings.language
+Object.keys(settings).length
+if(settings.customerMaxProductSize != undefined){
+
+}
+
