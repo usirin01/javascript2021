@@ -1,0 +1,48 @@
+let BookInformation = [
+    {
+       ISBN: "8800-7788-6544",
+       BookName: "The Lord of the Rings 1",
+       Author: "J.R.R. Tolkien",
+       Category: "science fiction novel",
+       Price: 35,
+       Lendedpeople:["Jack, Michael"],
+       Amount: 8,
+    },
+    {
+        ISBN: "8800-7788-6543",
+        BookName: "The Lord of the Rings 2",
+        Author: "J.R.R. Tolkien",
+        Category: "science fiction novel",
+        Price: 30,
+        Lendedpeople:[],
+        Amount: 10,
+     },
+     {
+        ISBN: "8800-7788-6542",
+        BookName: "The Lord of the Ring 3",
+        Author: "J.R.R. Tolkien",
+        Category: "science fiction novel",
+        Price: 30,
+        Lendedpeople:["Anna, Katherina"],
+        Amount: 8,
+     },
+     {
+        ISBN: "8800-7788-6541",
+        BookName: "Hobbit",
+        Author: "J.R.R. Tolkien",
+        Category: "science fiction novel",
+        Price: 25,
+        Lendedpeople:["David"],
+        Amount: 9,
+     },
+
+     {
+        ISBN: "8800-7788-6540",
+        BookName: "Alex",
+        Author: "Alex",
+        Category: "Biography",
+        Price: 25,
+        Lendedpeople:["Ilya"],
+        Amount: 9,
+      },
+]
